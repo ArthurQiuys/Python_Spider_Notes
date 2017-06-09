@@ -16,3 +16,11 @@
   获取到代码之后就可以安装到python的包中
     $ python setup.py install
 值得注意的是在直接pip安装的时候可能会出现一些错误，大多数是因为对特定文件的写入权限问题，所以需要sudo超级权限
+
+2.lxml
+    pip install lxml
+  如果出现目录安装错误，还是需要sudo
+3.ipython
+    pip install ipython
+4.jupyter
+    pip install jupyter
