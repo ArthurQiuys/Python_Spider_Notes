@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 # Created by Arthur Qiu on 2017/6/8
 import os
-import sys
+# import sys
 import requests
-import urllib2
+# import urllib2
 import re
 from lxml import etree
 
@@ -30,8 +30,9 @@ def page_info(my_page):
     :param my_page:文章
     :return: 实际需要的数据
     """
-    my_page_Info = re.findall(r'<div class = "titleBar" id = ".*?"><h2><div class = "more"><a href = "(.*?)">.*?</a></div></div>', my_page, re.S)
-    return my_page_Info
+    my_page_info = re.findall(r'<div class = "titleBar" id = ".*?"><h2><div class = "more"><a '
+                              r'href = "(.*?)">.*?</a></div></div>', my_page, re.S)
+    return my_page_info
 
 
 def new_page_info(new_page):
